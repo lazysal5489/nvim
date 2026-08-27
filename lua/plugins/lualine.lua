@@ -54,6 +54,7 @@ return {
           return " " .. os.date("%R")
         end,
         color = { gui = "bold" },
+        icon = { "󰣇", color = { gui = "bold" } },
       },
     }
   end,
