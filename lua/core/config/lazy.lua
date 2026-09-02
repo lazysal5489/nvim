@@ -51,3 +51,8 @@ require("lazy").setup({
     },
   },
 })
+
+-- require config file
+require("core.config.options")
+require("core.config.keymaps")
+require("core.config.autocmds")
