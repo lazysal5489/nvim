@@ -52,7 +52,10 @@ return {
             grouped = true,
             previewer = false,
             initial_mode = "normal",
-            layout_config = { height = 40 },
+            layout_config = {
+              height = 0.7,
+              width = 0.7,
+            },
           })
         end,
         desc = "Open File Browser with the path of the current buffer",
@@ -84,7 +87,10 @@ return {
           dir_icon_hl = "TelescopeDirIconWhite",
           grouped = true,
           quiet = true,
-          layout_config = { height = 40 },
+          layout_config = {
+            height = 0.7,
+            width = 0.7,
+          },
           mappings = {
             ["n"] = {
               ["N"] = fb_actions.create,
