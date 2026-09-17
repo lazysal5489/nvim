@@ -56,3 +56,6 @@ require("lazy").setup({
 require("core.config.options")
 require("core.config.keymaps")
 require("core.config.autocmds")
+
+-- watch for quickshell theme switches (live-reloads :colorscheme)
+pcall(require, "theme.watcher")

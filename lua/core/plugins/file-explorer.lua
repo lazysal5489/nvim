@@ -1,10 +1,3 @@
-local function set_dir_icon_hl()
-  vim.api.nvim_set_hl(0, "TelescopeDirIconWhite", { fg = "#ffffff", bold = true })
-end
-set_dir_icon_hl()
-vim.api.nvim_create_autocmd("ColorScheme", {
-  callback = set_dir_icon_hl,
-})
 return {
   -- oil.nvim: owns `nvim .` and netrw, full-window buffer-style explorer
   {
@@ -53,8 +46,7 @@ return {
             previewer = false,
             initial_mode = "normal",
             layout_config = {
-              height = 0.7,
-              width = 0.7,
+              height = 40,
             },
           })
         end,
@@ -84,12 +76,10 @@ return {
           hidden = true,
           respect_gitignore = false,
           dir_icon = "",
-          dir_icon_hl = "TelescopeDirIconWhite",
           grouped = true,
           quiet = true,
           layout_config = {
-            height = 0.7,
-            width = 0.7,
+            height = 40,
           },
           mappings = {
             ["n"] = {
